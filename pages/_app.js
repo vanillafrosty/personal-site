@@ -13,11 +13,16 @@ const MyApp = ({ Component, pageProps }) => {
       <Head>
         <title>Woo Food</title>
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""
+        />
       </Head>
-      <div className="flex justify-between h-24 p-4 bg-red-50">
+      <div className="flex justify-between p-4 bg-red-50">
         <div className="flex-none font-bold text-3xl">
-          <div>WOO</div>
-          <div className="pl-2">FOOD</div>
+          <div>DWU Reviews</div>
         </div>
         <div className="flex text-lg items-center">
           <Link href="/about">
