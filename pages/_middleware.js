@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 
 export async function middleware(req, ev) {
-  const { pathname } = req.nextUrl;
+  const { pathname, origin } = req.nextUrl;
   if (pathname == "/") {
-    return NextResponse.redirect("/about");
+    return NextResponse.redirect(`${origin}/about`);
   }
   return NextResponse.next();
 }
